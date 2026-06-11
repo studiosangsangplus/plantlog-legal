@@ -50,11 +50,17 @@
       width: 42px;
       height: 42px;
       border-radius: 14px;
+      overflow: hidden;
       display: grid;
       place-items: center;
       background: linear-gradient(180deg, #9CE0DD, #267156);
-      color: white;
-      font-size: 24px;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .hero {
@@ -230,7 +236,9 @@
 <body>
   <header class="wrap">
     <div class="brand">
-      <div class="logo">🌿</div>
+      <div class="logo">
+        <img src="app-icon.png" alt="PlantLog logo">
+      </div>
       <span>PlantLog</span>
     </div>
   </header>
@@ -243,10 +251,6 @@
           PlantLog is a simple plant watering tracker made for people who want
           to record watering history and quickly see which plants need water.
         </p>
-        <div class="buttons">
-          <a class="button primary" href="#features">View Features</a>
-          <a class="button" href="privacy.html">Privacy Policy</a>
-        </div>
       </div>
 
       <div class="phone" aria-label="PlantLog app preview">
